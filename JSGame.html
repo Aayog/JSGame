@@ -15,6 +15,7 @@ var player1Score = 0;
 var player2Score = 0;
 const PADDLE_HEIGHT =100;
 const PADDLE_WIDTH =10;
+
 function calculateMousePos(evt) {
     var rect = canvas.getBoundingClientRect();
     var root = document.documentElement;
@@ -70,9 +71,9 @@ function moveEverything(){
     if((ballX <= PADDLE_WIDTH*2)){
         if((ballY >= paddle1Y) && ballY <= (paddle1Y + PADDLE_HEIGHT)){
             if(ballSpeedX<0){
-                ballSpeedX -= 1;
+                ballSpeedX -= 0.01;
             }else{
-                ballSpeedX += 1;
+                ballSpeedX += 0.01;
 
             }
             ballSpeedX = -ballSpeedX;
@@ -84,9 +85,9 @@ function moveEverything(){
     if( ballX >=(canvas.width - PADDLE_WIDTH*2)){
         if((ballY >= paddle2Y) && ballY <= (paddle2Y + PADDLE_HEIGHT)){
             if(ballSpeedX<0){
-                ballSpeedX -= 1;
+                ballSpeedX -= 0.01;
             }else{
-                ballSpeedX += 1;
+                ballSpeedX += 0.01;
 
             }
             ballSpeedX = -ballSpeedX;
