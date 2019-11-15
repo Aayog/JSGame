@@ -1,0 +1,27 @@
+body{
+    margin: 30px;
+    padding: 10px;
+    background: silver;
+    font-family: fantasy;
+}
+h1{
+    text-align: center;
+    color: slategray;
+    border: 3px dashed grey;
+}
+table{
+    padding : 10px;
+    margin: 20px;
+    width: 50%;
+    border-style: solid; 
+    border-color:black;
+    border-collapse: collapse;
+}
+th{
+    background: burlywood;
+}
+td, th {
+    padding: 5px;
+    align-content: center;
+    border: 2px solid black;
+}
